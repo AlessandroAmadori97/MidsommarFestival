@@ -20,7 +20,7 @@
       /* ALTEZZA BACKGR */
     background-image: linear-gradient(rgba(0, 0, 0, 0.237), rgba(0, 0, 0, 0.617)),url(palo.jpeg);
     opacity: 80%;
-    background-size: cover;
+    background-size: 1450px;
     background-position: center center;
     background-attachment: fixed;
     /* AGGIUNTO PER IL VIDEO */
@@ -162,9 +162,5 @@
         top: 1220px;
       }
     }
-    @media (max-width: 7300px) {
-      .banner {
-      height: 210vh;
-      }
-    }
+  
   
