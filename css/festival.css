@@ -162,7 +162,7 @@
         top: 1220px;
       }
     }
-    @media (max-width: 790px) {
+    @media (max-width: 7300px) {
       .banner {
       height: 210vh;
       }
