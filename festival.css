@@ -253,9 +253,9 @@
     transform: translate(-55%, -50%);
     border-radius: 2%;
     }
-    @media (max-width: 1900px) {
+    @media (max-width: 1950px) {
       .container-xxl > iframe {
-        top: 2220px;
+        top: 3100px;
       }
     }
     @media (max-width: 790px) {
