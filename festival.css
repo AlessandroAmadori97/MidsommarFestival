@@ -253,9 +253,13 @@
     transform: translate(-55%, -50%);
     border-radius: 2%;
     }
-    @media (max-width: 2073600px) {
+    @media (min-width: 1920px) {
       .container-xxl > iframe {
-        top: 3100px;
+        top: 290%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 60%;
       }
     }
     @media (max-width: 790px) {
