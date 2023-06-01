@@ -1,26 +1,48 @@
+  /* HEADER E FOOTER INIZIO */
 .container-header{
-    margin: 0.1% ;
-    padding: 1.5%;
-    background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+  margin: 0% ;
+  padding: 1.4%;
+  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+}
+.container-footer h2 p, .social{
+  margin: 0%;
+  margin-bottom: 0px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family:'Montserrat';
+  color: rgba(0, 0, 0, 0.458);
+  font-size:small;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(50, 167, 171, 0.800), rgb(180, 186, 121, 0.800));
+}
+.social a:not(:last-child) {
+  margin-right: 15px;
+}
+.contatti-scritta{
+  padding: 0.2%;
+}
+@media (max-width: 790px){
+  .fa-3x {
+  font-size: 2em !important;
   }
-  .container-footer h2 p{
-    margin: 0.1% ;
-    padding: 2%;
-    font-family:'Montserrat';
-    color: rgba(0, 0, 0, 0.458);
-    font-size:small;
-    text-align: center;
-    background: linear-gradient(60deg, rgb(50, 167, 171, 0.800), rgb(180, 186, 121, 0.800));
   }
+  @media (max-width: 790px){
+  .container-footer h2 p {
+  font-size: 10px;
+  padding: 2%;
+  }
+  }
+/* HEADER E FOOTER FINE*/
+    /* IMMAGINE BG */
   .banner {
     position: relative;
     width: 100%;
       /* ALTEZZA BACKGR */
-    height: 260vh;
+    height: 335vh;
       /* ALTEZZA BACKGR */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.237), rgba(0, 0, 0, 0.617)),url(palo.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.168)),url(imgbg/palo.jpg);
     opacity: 80%;
-    background-size: 1450px;
+    background-size:cover;
     background-position: center center;
     background-attachment: fixed;
     /* AGGIUNTO PER IL VIDEO */
@@ -28,6 +50,7 @@
     overflow: hidden;
     /* AGGIUNTO PER IL VIDEO */
   }
+    /* IMMAGINE BG */
     /* LOGO E NAVBAR INIZIO */
     .navbar {
         width: 85%;
@@ -55,6 +78,7 @@
         color:rgb(255, 255, 255);
         text-transform: uppercase;
         font-family: 'Montserrat';
+        font-size: 25px;
       }
       .navbar ul li::after{
       content: "";
@@ -89,25 +113,25 @@
           }
         @media (max-width: 790px){
         .navbar ul li a{
-          font-size: 7px;
+          font-size: 8px;
         }
         }
         @media (max-width: 790px){
           .logo{
-        width: 70px;
+        width: 45px;
           }
         }
     /* LOGO E NAVBAR FINE */
  
     .banner video {
       position: absolute;
-      top: 24%;
+      top: 18%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 60%;
-      height: 30%;
+      height: 20%;
       object-fit: cover;
-      opacity: 95%; 
+      opacity: 100%; 
       z-index: 1;
       border-radius: 2%;
       border-style: groove;
@@ -121,46 +145,125 @@
     }
     .container-fluid-text{
       position:absolute;
-      top: 110%;
+      top: 105%;
       left: 6%;
-      font-size: 25px;
+      font-size: 19px;
       z-index: 2;
       color: rgb(255, 255, 255);
       font-family: 'Montserrat';
+      background: linear-gradient(60deg,rgba(80, 170, 109, 0.832), rgba(120, 144, 218, 0.831));
+      padding-right: 3%;
+      padding-top: 1%;
+      padding-left: 3%;
+      padding-bottom: 1%;
+      margin-right: 4%;
+      border-radius: 2%;
+      text-align:justify;
     }
     .container-fluid-text h1{
       font-weight: 600;
-      font-size: 60px;
-      color: #d5a337;
+      font-size: 50px;
+      color: #e3ad3a;
+    }
+    .container-fluid-text-2{
+      position:absolute;
+      top: 175%;
+      left: 6%;
+      font-size: 19px;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      font-family: 'Montserrat';
+      background: linear-gradient(60deg,rgba(120, 144, 218, 0.831), rgba(80, 170, 109, 0.832));
+      padding-right: 3%;
+      padding-top: 1%;
+      padding-left: 3%;
+      margin-right: 4%;
+      border-radius: 2%;
+      text-align:justify;
+    }
+    .container-fluid-text-2 h5{
+      font-weight: 600;
+      font-size: 40px;
+      color: #e3ad3a;
+      
+    }
+    .container-fluid-text-3{
+      position:absolute;
+      top: 215%;
+      left: 6%;
+      font-size: 19px;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      font-family: 'Montserrat';
+      background: linear-gradient(60deg,rgba(80, 170, 109, 0.832), rgba(120, 144, 218, 0.831));
+      padding-right: 3%;
+      padding-top: 1%;
+      padding-left: 3%;
+      margin-right: 4%;
+      border-radius: 2%;
+      text-align:justify;
+    }
+    .container-fluid-text-3 h5{
+      font-weight: 600;
+      font-size: 40px;
+      color: #e3ad3a;
       
     }
     @media (max-width: 790px) {
       .section, .container-fluid-text{
-      font-size: 13px; 
+      font-size: 12px; 
       top: 50%; 
       left: 10%; 
       width: 80%; 
       overflow: hidden; 
       }
     }
+    @media (max-width: 790px) {
+      .section, .container-fluid-text-2{
+      font-size: 12px; 
+      top: 145%; 
+      left: 10%; 
+      width: 80%; 
+      overflow: hidden; 
+      }
+    }
+    @media (max-width: 790px) {
+      .container-fluid-text-2 h5, .container-fluid-text-3 h5{
+      font-size: 20px;
+      }
+    }
+    @media (max-width: 790px) {
+      .section, .container-fluid-text-3{
+      font-size: 12px; 
+      top: 190%; 
+      left: 10%; 
+      width: 80%; 
+      overflow: hidden; 
+      }
+    }
     .map-container > iframe {
-      position: absolute;
-    top: 1750px;
+    position: absolute;
+    z-index: 3;
+    top: 2220px;
     left: 55%;
     right: 0;
     bottom: 0;
-    z-index: 1;
-    width: 50%;
+    width: 80%;
     height: 50%;
-    transform: translate(-30%, -50%);
+    transform: translate(-55%, -50%);
     border-radius: 2%;
     }
     @media (max-width: 790px) {
       .map-container > iframe {
         max-width: 550px;
         max-height: 500px;
-        top: 1220px;
+        top: 1880px;
       }
     }
+    @media (max-width: 790px){
+      .banner{
+      height: 320vh;
+      }
+      }
   
   

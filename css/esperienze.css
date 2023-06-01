@@ -1,0 +1,159 @@
+ /* HEADER E FOOTER INIZIO */
+.container-header{
+  margin: 0% ;
+  padding: 1.4%;
+  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+}
+.container-footer h2 p, .social{
+  margin: 0%;
+  margin-bottom: 0px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family:'Montserrat';
+  color: rgba(0, 0, 0, 0.458);
+  font-size:small;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(50, 167, 171, 0.800), rgb(180, 186, 121, 0.800));
+}
+.social a:not(:last-child) {
+  margin-right: 15px;
+}
+.contatti-scritta{
+  padding: 0.2%;
+}
+@media (max-width: 790px){
+  .fa-3x {
+  font-size: 2em !important;
+  }
+  }
+  @media (max-width: 790px){
+  .container-footer h2 p {
+  font-size: 10px;
+  padding: 2%;
+  }
+  }
+/* HEADER E FOOTER FINE*/
+.banner {
+    position: relative;
+    width: 100%;
+      /* ALTEZZA BACKGR */
+    height: 150vh;
+      /* ALTEZZA BACKGR */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0.356)),url(imgbg/flowers.jpg);
+    opacity: 80%;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+    /* LOGO E NAVBAR INIZIO */
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        width: 140px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin: 1% -6%;
+        opacity: 1.5;
+      }
+      .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 8px;
+        position: relative;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-size: 25px;
+      }
+      .navbar ul li::after{
+      content: "";
+      height: 3px;
+      width: 0;
+      background: #de2522;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+      }
+      .navbar ul li:hover::after{
+        width: 100%;
+      }
+      .contenuto {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform:translateY(-50%);
+        text-align: center;
+        color: white;
+      }
+      @media (max-width: 790px){
+        .contenuto h1{
+          font-size: 40px;
+        }
+        }
+        @media (max-width: 790px){
+          .contenuto p{
+            font-size: 17px;
+          }
+          }
+        @media (max-width: 790px){
+        .navbar ul li a{
+          font-size: 8px;
+        }
+        }
+        @media (max-width: 790px){
+          .logo{
+        width: 45px;
+          }
+        }
+        @media (max-width: 790px){
+            .banner{
+          height: 160vh;
+            }
+          }
+          
+
+    /* LOGO E NAVBAR FINE */
+    .playlist-grid{
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    }
+    @media (max-width: 790px){
+    .playlist-grid{
+    top: 35%;
+    width: 85%;
+        }
+      }
+    .container-fluid-text, .p{
+    position: absolute;
+    object-fit: cover;
+    top: 83%;
+    right: 15%;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 50px;
+    color: #edda48;
+    text-decoration:underline overline rgb(231, 134, 31) ;
+    }
+    @media (max-width: 790px){
+    .container-fluid-text, .p{
+        top: 16%;
+        text-align:center;
+        left: 10%;
+        font-size: 26px;
+        
+    }
+    }
