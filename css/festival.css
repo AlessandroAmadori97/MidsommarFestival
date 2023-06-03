@@ -4,16 +4,40 @@
   padding: 1.4%;
   background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
 }
-.container-footer h2 p, .social{
-  margin: 0%;
-  margin-bottom: 0px;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-family:'Montserrat';
-  color: rgba(0, 0, 0, 0.458);
-  font-size:small;
+.container-footer {
+  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+  padding: 20px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.contatti-scritta {
+  margin-right: 10px;
+  color: #525252e4;
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+.footer-links {
   text-align: center;
-  background: linear-gradient(60deg, rgb(50, 167, 171, 0.800), rgb(180, 186, 121, 0.800));
+  font-size: 18px;
+}
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffffa1;
+  font-family: 'Montserrat' bold;
+}
+.footer-links a:hover {
+  text-decoration: none;
+  color: #419da2d3;
+}
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
 }
 .social a:not(:last-child) {
   margin-right: 15px;
@@ -22,12 +46,12 @@
   padding: 0.2%;
 }
 @media (max-width: 790px){
-  .fa-3x {
-  font-size: 2em !important;
+  .fa-2x {
+  font-size: 2.5em !important;
   }
   }
   @media (max-width: 790px){
-  .container-footer h2 p {
+  .container-footer, .social, .contatti-scritta, .footer-links, .footer-text{
   font-size: 10px;
   padding: 2%;
   }
@@ -40,7 +64,7 @@
       /* ALTEZZA BACKGR */
     height: 335vh;
       /* ALTEZZA BACKGR */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.168)),url(imgbg/palo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.134)),url(imgbg/palo.jpg);
     opacity: 80%;
     background-size:cover;
     background-position: center center;
@@ -125,7 +149,7 @@
  
     .banner video {
       position: absolute;
-      top: 18%;
+      top: 16%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 60%;
@@ -253,9 +277,13 @@
     transform: translate(-55%, -50%);
     border-radius: 2%;
     }
-    @media (max-width: 1400px) {
+    @media (min-width: 1920px) {
       .container-xxl > iframe {
-        top: 2680px;
+        top: 290%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 60%;
       }
     }
     @media (max-width: 790px) {

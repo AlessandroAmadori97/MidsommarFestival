@@ -1,19 +1,43 @@
- /* HEADER E FOOTER INIZIO */
+  /* HEADER E FOOTER INIZIO */
 .container-header{
   margin: 0% ;
   padding: 1.4%;
-  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+  background: linear-gradient(60deg,#b3ba79e3, #32a7abdd);
 }
-.container-footer h2 p, .social{
-  margin: 0%;
-  margin-bottom: 0px;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-family:'Montserrat';
-  color: rgba(0, 0, 0, 0.458);
-  font-size:small;
+.container-footer {
+  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+  padding: 20px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.contatti-scritta {
+  margin-right: 10px;
+  color: #525252e4;
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+.footer-links {
   text-align: center;
-  background: linear-gradient(60deg, rgb(50, 167, 171, 0.800), rgb(180, 186, 121, 0.800));
+  font-size: 18px;
+}
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffffa1;
+  font-family: 'Montserrat' bold;
+}
+.footer-links a:hover {
+  text-decoration: none;
+  color: #419da2d3;
+}
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
 }
 .social a:not(:last-child) {
   margin-right: 15px;
@@ -22,12 +46,12 @@
   padding: 0.2%;
 }
 @media (max-width: 790px){
-  .fa-3x {
-  font-size: 2em !important;
+  .fa-2x {
+  font-size: 2.5em !important;
   }
   }
   @media (max-width: 790px){
-  .container-footer h2 p {
+  .container-footer, .social, .contatti-scritta, .footer-links, .footer-text{
   font-size: 10px;
   padding: 2%;
   }
@@ -120,9 +144,8 @@
           height: 160vh;
             }
           }
-          
-
     /* LOGO E NAVBAR FINE */
+
     .playlist-grid{
     position: absolute;
     top: 47%;
@@ -142,9 +165,9 @@
     object-fit: cover;
     top: 83%;
     right: 15%;
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
     color: #edda48;
     text-decoration:underline overline rgb(231, 134, 31) ;
     }

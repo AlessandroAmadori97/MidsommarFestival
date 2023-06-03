@@ -2,18 +2,42 @@
 .container-header{
   margin: 0% ;
   padding: 1.4%;
-  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+  background: linear-gradient(60deg,rgba(179, 186, 121, 0.737), rgba(50, 167, 171, 0.712));
 }
-.container-footer h2 p, .social{
-  margin: 0%;
-  margin-bottom: 0px;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-family:'Montserrat';
-  color: rgba(0, 0, 0, 0.458);
-  font-size:small;
+.container-footer {
+  background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
+  padding: 20px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.contatti-scritta {
+  margin-right: 10px;
+  color: #525252e4;
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+.footer-links {
   text-align: center;
-  background: linear-gradient(60deg, rgb(50, 167, 171, 0.800), rgb(180, 186, 121, 0.800));
+  font-size: 18px;
+}
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffffa1;
+  font-family: 'Montserrat' bold;
+}
+.footer-links a:hover {
+  text-decoration: none;
+  color: #419da2d3;
+}
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
 }
 .social a:not(:last-child) {
   margin-right: 15px;
@@ -22,12 +46,12 @@
   padding: 0.2%;
 }
 @media (max-width: 790px){
-  .fa-3x {
-  font-size: 2em !important;
+  .fa-2x {
+  font-size: 2.5em !important;
   }
   }
   @media (max-width: 790px){
-  .container-footer h2 p {
+  .container-footer, .social, .contatti-scritta, .footer-links, .footer-text{
   font-size: 10px;
   padding: 2%;
   }
@@ -40,11 +64,15 @@ h3{
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0.322)),url(imgbg/backgr.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  /* AGGIUNTO PER IL VIDEO */
+  z-index: 0;
+  overflow: hidden;
+  /* AGGIUNTO PER IL VIDEO */
 }
 .navbar {
   width: 85%;
@@ -96,8 +124,8 @@ transition: 0.5s;
   color: white;
 }
 .contenuto h1{
-font-size: 90px;
-margin-top:10px;
+font-size: 96px;
+margin-top: 90px;
 font-family: 'Montserrat';
 }
 .contenuto p{
@@ -112,7 +140,7 @@ font-family: 'Montserrat';
 }
 button{
   font-family: 'Montserrat'!important;
-  width: 250px;
+  width: 270px;
   padding: 15px 0;
   text-align: center;
   margin: 20px 10px;
@@ -145,6 +173,7 @@ button:hover {
 @media (max-width: 790px){
 .contenuto h1{
   font-size: 40px;
+  margin-top: 8px;
 }
 }
 @media (max-width: 790px){
@@ -167,4 +196,20 @@ button:hover {
 width: 45px;
   }
 }
-
+.banner > iframe {
+  position: absolute;
+  top: 64%;
+  left: 51%;
+  transform: translate(-52%, -50%);
+  width: 525px;
+  height: 295px;
+  z-index: 0;
+  border-radius: 2%;
+}
+@media (max-width: 790px) {
+  .banner > iframe {
+    width: 320px !important;
+    height: 180px;
+    top: 590px !important;
+  }
+}
