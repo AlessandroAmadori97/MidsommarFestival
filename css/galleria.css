@@ -64,11 +64,9 @@
         /* ALTEZZA BACKGR */
       height: 156vh;
         /* ALTEZZA BACKGR */
-      background: linear-gradient(74deg,rgb(254, 203, 0), rgb(0, 106, 167));
-      opacity: 80%;
+      background: linear-gradient(30deg,rgb(254, 203, 0), rgb(0, 116, 183));
+      opacity: 85%;
       background-size:cover;
-      background-position: center center;
-      background-attachment: fixed;
     }
       /* IMMAGINE BG */
       /* LOGO E NAVBAR INIZIO */
@@ -143,14 +141,14 @@
           }
           @media (max-width: 790px){
             .banner{
-          height: 180vh;
+          height: 160vh;
             }
           }
       /* LOGO E NAVBAR FINE */
- .container1{
+.container1{
 width: 35% !important;
 position: absolute;
-top: 35%;
+top: 45%;
 left: 14%;
  }
 .carousel-inner{
@@ -159,11 +157,11 @@ left: 14%;
 .container2{
 width: 35% !important;
 position: absolute;
-top: 35%;
+top: 45%;
 left: 54%;
 }
 .carousel-inner{
-border-radius: 4%;
+border-radius: 3%;
 border-style: groove solid;
 border-color: rgba(141, 141, 141, 0.624)
 }
@@ -172,14 +170,39 @@ font-family: 'Montserrat' !important;
 }
 @media (max-width: 790px){
 .container1{
-top: 17%;
+top: 29%;
 width: 70% !important;
 }
 }
 @media (max-width: 790px){
 .container2{
-top: 95%;
+top: 93%;
 width: 71% !important;
 left: 13%;
 }
 }
+@media (max-width: 790px){
+.carousel-caption, h5 {
+font-size: 10px !important;
+font-family: 'Montserrat' !important;
+}
+}
+.container-fluid-text, .p{
+  position: absolute;
+  object-fit: cover;
+  top: 29%;
+  right: 33%;
+  font-family: 'Nunito';
+  text-align: center;
+  font-size: 45px;
+  color: #edda48;
+  text-decoration:underline overline rgb(231, 134, 31) ;
+  }
+  @media (max-width: 790px){
+  .container-fluid-text, .p{
+      top: 16%;
+      text-align: center;
+      left: 33%;
+      font-size: 22px;   
+  }
+  }
