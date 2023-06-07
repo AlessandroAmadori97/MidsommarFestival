@@ -4,7 +4,7 @@
     padding: 1.4%;
     background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
   }
-  .container-footer {
+  .container-footer{
     background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
     padding: 20px;
   }
@@ -62,14 +62,17 @@
     position: relative;
     width: 100%;
     /* ALTEZZA BACKGR */
-    height: 335vh;
+    height: 635vh;
     /* ALTEZZA BACKGR */
-    background-color: darkslategrey;
-    opacity: 80%;
+    background-color: #2f4f4f;
     background-size:cover;
     background-position: center center;
-    background-attachment: fixed;
     }
+    @media (max-width: 790px){
+      .banner {
+      height: 1300vh;
+      }
+      }
       /* IMMAGINE BG */
       /* LOGO E NAVBAR INIZIO */
       .navbar {
@@ -142,3 +145,34 @@
             }
           }
       /* LOGO E NAVBAR FINE */
+.container-fluid{
+  background-color: #2f4f4f;
+  position: absolute;
+  top: 27%;
+  text-align: center;
+  color: #dddcd4;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+h1{
+  margin: 25px !important;
+  color: rgb(202, 222, 247);
+}
+h5{
+padding: 30px;
+font-size: 35px !important;
+text-decoration: underline 20% #499393;
+color: #c3b87d;
+}
+h6{
+font-size: 25px !important;
+color: #f9eca1;
+margin: 25px !important;
+}
+.strutt{
+width: 32%;
+}
+.homelay{
+  width: 32%;
+  margin: 20px;
+}

@@ -2,7 +2,7 @@
 .container-header{
   margin: 0% ;
   padding: 1.4%;
-  background: linear-gradient(60deg,rgba(179, 186, 121, 0.737), rgba(50, 167, 171, 0.712));
+  background: linear-gradient(60deg,#b3ba79bc, #32a7abb6);
 }
 .container-footer {
   background: linear-gradient(60deg,rgba(179, 186, 121, 0.891), rgba(50, 167, 171, 0.868));
@@ -74,6 +74,11 @@ h3{
   overflow: hidden;
   /* AGGIUNTO PER IL VIDEO */
 }
+@media (max-width: 790px){
+  .banner {
+  height: 135vh;
+  }
+  }
 .navbar {
   width: 85%;
   margin: auto;
