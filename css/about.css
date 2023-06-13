@@ -62,7 +62,7 @@
     position: relative;
     width: 100%;
     /* ALTEZZA BACKGR */
-    height: 635vh;
+    height: 665vh;
     /* ALTEZZA BACKGR */
     background-color: #2f4f4f;
     background-size:cover;
@@ -70,7 +70,7 @@
     }
     @media (max-width: 790px){
       .banner {
-      height: 1300vh;
+      height: 1240vh;
       }
       }
       /* IMMAGINE BG */
@@ -175,4 +175,14 @@ width: 32%;
 .homelay{
   width: 32%;
   margin: 20px;
+}
+.imgsocial{
+  width: 40%;
+  display: inline-block;
+  padding-right: 2% ;
+  padding-top: 3%;
+}
+.imgsocial2{
+  width: 45%;
+  display: inline-block;
 }

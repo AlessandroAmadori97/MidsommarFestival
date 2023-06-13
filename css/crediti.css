@@ -62,7 +62,7 @@
     position: relative;
     width: 100%;
     /* ALTEZZA BACKGR */
-    height: 105vh;
+    height: 190vh;
     /* ALTEZZA BACKGR */
     background-color: #2f4f4f;
     background-size:cover;
@@ -153,4 +153,5 @@
 h1{
   margin: 25px !important;
   color: rgb(202, 222, 247);
+  text-decoration: underline 5px;
 }
