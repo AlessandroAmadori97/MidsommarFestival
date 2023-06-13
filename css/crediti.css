@@ -69,6 +69,11 @@
     background-position: center center;
     background-attachment: fixed;
     }
+    @media (max-width: 790px){
+      .banner {
+      height: 320vh;
+      }
+      }
       /* IMMAGINE BG */
       /* LOGO E NAVBAR INIZIO */
       .navbar {
